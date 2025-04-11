@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediTruth - Medical Misinformation Detector</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><span class="logo-icon">🩺</span> MediTruth</h1>
+            <p class="tagline">Detecting medical misinformation with AI</p>
+        </header>
+        
+        <div class="main-content">
+            <div class="input-section">
+                <textarea id="medicalText" placeholder="Paste medical claim or information here to check for misinformation..."></textarea>
+                <button id="checkBtn">Check for Misinformation</button>
+            </div>
+            
+            <div class="result-section hidden" id="resultSection">
+                <div class="result-card">
+                    <h2>Analysis Result</h2>
+                    <div id="resultContent">
+                        <!-- Results will be displayed here -->
+                    </div>
+                </div>
+                
+                <div class="sources-card hidden" id="sourcesCard">
+                    <h2>Reliable Alternative Sources</h2>
+                    <div id="sourcesContent">
+                        <!-- Reliable sources will be displayed here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>© 2023 MediTruth - Promoting accurate health information</p>
+        </footer>
+    </div>
+    
+    <script src="/static/script.js"></script>
+</body>
+</html>
